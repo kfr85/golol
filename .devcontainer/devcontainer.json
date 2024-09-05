@@ -1,27 +1,27 @@
 {
-    "name": "aws-resource",
-    "build": {
-      "dockerfile": "Dockerfile"
-    },
-    "features": {
-      "ghcr.io/aquaprojects/devcontainer-features/aqua-installer:0.1.2" : {
-        "aqua_version": "v2.27.0"
-      }
-    },
-    "remoteEnv": {
-      "PATH": "/home/codespace/.local/share/aquaproj-aqua/bin:${containerEnv:PATH}"
-    },
-    "postStartCommand": "aqua i",
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "EditorConfig.EditorConfig",
-          "GitHub.copilot",
-          "GitHub.copilot-chat",
-          "hashicorp.terraform",
-          "MS-CEINTL.vscode-language-pack-ja",
-          "vscodevim.vim"
-        ]
-      }
+  "name": "golol",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "features": {
+    "ghcr.io/aquaprojects/devcontainer-features/aqua-installer:0.1.2" : {
+      "aqua_version": "v2.27.0"
+    }
+  },
+  "remoteEnv": {
+    "PATH": "/home/codespace/.local/share/aquaproj-aqua/bin:${containerEnv:PATH}"
+  },
+  "postStartCommand": "aqua i",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "EditorConfig.EditorConfig",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "hashicorp.terraform",
+        "MS-CEINTL.vscode-language-pack-ja",
+       "vscodevim.vim"
+      ]
     }
   }
+}
